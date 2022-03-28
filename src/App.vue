@@ -30,7 +30,7 @@ export default {
     background-color: #97468e !important;
 }
 .uk-section-primary {
-    border-bottom: 3px solid #b569ac;
+    border-bottom: 8px solid #b569ac;
 }
 .uk-section-secondary {
     background-color: #3e1f00 !important;
@@ -51,10 +51,20 @@ export default {
 .uk-navbar-dropdown-nav>li>a {
     color: #999 !important;
 }
-.uk-card svg {
+.uk-card > svg {
     width: 4rem;
     margin: 0 auto;
     display: block;
+}
+.uk-card-secondary svg {
+    color: #ffffff !important;
+}
+.uk-button svg {
+    width: 1.5rem;
+}
+.uk-article-title {
+    border-bottom: 3px solid #97468e;
+    text-transform: uppercase;
 }
 
 .relative {
@@ -77,11 +87,41 @@ export default {
     height: 32px !important;
 }
 .uk-checkbox {
-    background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23fff%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A);
+    background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23fff%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A) !important;
     background-size: contain;
+    background-color: #1e87f0 !important;
 }
 .uk-checkbox:not(:checked), .uk-checkbox:active {
-    background-color: #b1b1b1;
-    opacity: 0.5;
+    background-color: #b3b3b3 !important;
+}
+.uk-badge-warning {
+    background: #faa05a !important;
+}
+.uk-badge-success {
+    background: #b1fdb1 !important;
+}
+.uk-sticky,
+.uk-sticky * {
+    transition: all 0.3s ease-out;
+}
+.uk-sticky.uk-active {
+    padding: 10px 20px;
+}
+.uk-sticky.uk-active * {
+    font-size: 90%;
+}
+.uk-sticky.uk-active .uk-list > li {
+    display: inline-block;
+}
+.uk-sticky.uk-active .uk-list > li + li {
+    margin-top: 3px;
+}
+.uk-sticky.uk-active .uk-button {
+    padding: 0 15px;
+    line-height: 30px;
+}
+.cursor,
+.with-cursor + label {
+    cursor: pointer !important;
 }
 </style>

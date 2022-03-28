@@ -9,7 +9,12 @@ const routes = [
   {
     path: '/orders',
     name: 'orders',
-    component: () => import('../views/AboutView.vue')
+    component: () => import('../views/OrdersView.vue')
+  },
+  {
+    path: '/ordersend',
+    name: 'ordersend',
+    component: () => import('../views/OrdersSubmit.vue')
   }
 ]
 
