@@ -1,24 +1,23 @@
-# pasteleria
+# Página de Pastelería en VUE
 
-## Project setup
+Este es un proyecto con fines de acreditación para Launch X de 2022.
+
+Por ser de uso libre, tienes libertad de utilizar todo o parcial el código aquí mostrado.
+
+## Configuración de proyecto
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compilar y ejecutar para desarrollo
+
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compilar y generar para producción
+
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
