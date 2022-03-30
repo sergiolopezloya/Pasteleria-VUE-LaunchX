@@ -29,7 +29,7 @@
             <h2 class="uk-article-title">{{this.formtitle}}</h2>
             <div class="uk-card uk-card-secondary uk-card-body uk-width-1-1" uk-sticky>
                 <div uk-grid>
-                    <div class="uk-width-expand">
+                    <div class="uk-width-expand@s">
                         <ul class="uk-list uk-list-hyphen">
                             <li><b>Tamaño:</b> <span v-html="$store.state.form.sizes"></span></li>
                             <li><b>Sabor(es):</b> <span v-html="$store.state.form.flavors"></span></li>
@@ -39,10 +39,10 @@
                                     minimumFractionDigits: 2,
                                     maximumFractionDigits: 2
                                 })
-                            }} {{ $store.state.currency }}</span></li>
+                            }} {{$store.state.currency}}</span></li>
                         </ul>
                     </div>
-                    <div class="uk-width-auto">
+                    <div class="uk-width-auto@s">
                         <div class="uk-inline">
                             <input type="submit" value="Enviar pedido" class="uk-button uk-button-primary uk-button-large" />
                         </div>

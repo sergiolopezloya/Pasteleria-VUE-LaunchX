@@ -100,6 +100,10 @@ export default {
 .uk-badge-success {
     background: #b1fdb1 !important;
 }
+.uk-badge-success *,
+.uk-badge-warning * {
+    color: #fff !important;
+}
 .uk-sticky,
 .uk-sticky * {
     transition: all 0.3s ease-out;
@@ -119,6 +123,9 @@ export default {
 .uk-sticky.uk-active .uk-button {
     padding: 0 15px;
     line-height: 30px;
+}
+.uk-badge .uk-badge {
+    margin-right: -5px;
 }
 .cursor,
 .with-cursor + label {

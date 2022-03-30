@@ -15,6 +15,16 @@ const routes = [
     path: '/ordersend',
     name: 'ordersend',
     component: () => import('../views/OrdersSubmit.vue')
+  },
+  {
+    path: '/admin/orders',
+    name: 'admin-orders',
+    component: () => import('../views/AdminOrdersView.vue')
+  },
+  {
+    path: '/admin/inventory',
+    name: 'admin-inventory',
+    component: () => import('../views/AdminInventoryView.vue')
   }
 ]
 

@@ -9,37 +9,61 @@ export default createStore({
         id: 1,
         name: 'Chocolate',
         price: 5.00,
-        image: 'img/sabores/chocolate.jpg'
+        image: '/img/sabores/chocolate.jpg',
+        inventory: 10,
+        unit: 'kg',
+        limit: 100,
+        notify: 15
       },
       {
         id: 2,
         name: 'Vainilla',
         price: 5.00,
-        image: 'img/sabores/vainilla.jpg'
+        image: '/img/sabores/vainilla.jpg',
+        inventory: 18,
+        unit: 'kg',
+        limit: 100,
+        notify: 15
       },
       {
         id: 3,
         name: 'Fresa',
         price: 5.00,
-        image: 'img/sabores/fresa.jpg'
+        image: '/img/sabores/fresa.jpg',
+        inventory: 12,
+        unit: 'kg',
+        limit: 100,
+        notify: 15
       },
       {
         id: 4,
         name: 'Nuez',
         price: 8.00,
-        image: 'img/sabores/nuez.jpg'
+        image: '/img/sabores/nuez.jpg',
+        inventory: 25,
+        unit: 'kg',
+        limit: 100,
+        notify: 15
       },
       {
         id: 5,
         name: 'Limón',
         price: 10.00,
-        image: 'img/sabores/limon.jpg'
+        image: '/img/sabores/limon.jpg',
+        inventory: 34,
+        unit: 'kg',
+        limit: 100,
+        notify: 15
       },
       {
         id: 6,
         name: 'Galleta',
         price: 15.00,
-        image: 'img/sabores/galleta.jpg'
+        image: '/img/sabores/galleta.jpg',
+        inventory: 13,
+        unit: 'piezas',
+        limit: 100,
+        notify: 15
       }
     ],
     decorations: [
@@ -47,37 +71,61 @@ export default createStore({
         id: 1,
         name: 'Letreros',
         price: 30.00,
-        image: 'img/decoraciones/letreros.jpg'
+        image: '/img/decoraciones/letreros.jpg',
+        inventory: 150,
+        unit: 'piezas',
+        limit: 300,
+        notify: 15
       },
       {
         id: 2,
         name: 'Frutales',
         price: 100.00,
-        image: 'img/decoraciones/frutales.jpg'
+        image: '/img/decoraciones/frutales.jpg',
+        inventory: -1,
+        unit: '',
+        limit: 100,
+        notify: 15
       },
       {
         id: 3,
         name: 'Flores',
         price: 150.00,
-        image: 'img/decoraciones/flores.jpg'
+        image: '/img/decoraciones/flores.jpg',
+        inventory: -1,
+        unit: '',
+        limit: 100,
+        notify: 15
       },
       {
         id: 4,
         name: 'Fondant',
         price: 80.00,
-        image: 'img/decoraciones/fondant.jpg'
+        image: '/img/decoraciones/fondant.jpg',
+        inventory: -1,
+        unit: '',
+        limit: 100,
+        notify: 15
       },
       {
         id: 5,
         name: 'Imágenes',
         price: 120.00,
-        image: 'img/decoraciones/imagenes.jpg'
+        image: '/img/decoraciones/imagenes.jpg',
+        inventory: -1,
+        unit: '',
+        limit: 100,
+        notify: 15
       },
       {
         id: 6,
         name: 'Globos',
         price: 70.00,
-        image: 'img/decoraciones/globos.jpg'
+        image: '/img/decoraciones/globos.jpg',
+        inventory: 100,
+        unit: 'piezas',
+        limit: 100,
+        notify: 15
       }
     ],
     sizes: [
@@ -116,7 +164,79 @@ export default createStore({
     validate: {
       flavor: '',
       decoration: ''
-    }
+    },
+    orders: [
+      {
+        id: 1,
+        name: 'Pedro',
+        email: 'pedropascal@gmail.com',
+        phone: '+52 1 55 55 55 55',
+        description: 'Un diseño sencillo y moderno',
+        date: '2022-03-29 14:17:32',
+        size: {
+          name: 'Chico',
+          price: 150.00
+        },
+        flavors: [
+          {
+            id: 1,
+            name: 'Chocolate',
+            price: 5.00,
+            image: '/img/sabores/chocolate.jpg'
+          }
+        ],
+        decorations: [
+          {
+            id: 1,
+            name: 'Letreros',
+            price: 30.00,
+            image: '/img/decoraciones/letreros.jpg'
+          },
+          {
+            id: 2,
+            name: 'Frutales',
+            price: 100.00,
+            image: '/img/decoraciones/frutales.jpg'
+          }
+        ],
+        price: 285.00
+      },
+      {
+        id: 2,
+        name: 'Juan',
+        email: '',
+        phone: '+52 1 55 55 55 55',
+        description: '',
+        date: '2022-03-29 14:17:32',
+        size: {
+          name: 'Grande',
+          price: 350.00
+        },
+        flavors: [
+          {
+            id: 1,
+            name: 'Fresa',
+            price: 5.00,
+            image: '/img/sabores/fresa.jpg'
+          },
+          {
+            id: 2,
+            name: 'Nuez',
+            price: 8.00,
+            image: '/img/sabores/nuez.jpg'
+          }
+        ],
+        decorations: [
+          {
+            id: 1,
+            name: 'Flores',
+            price: 150.00,
+            image: '/img/decoraciones/flores.jpg'
+          }
+        ],
+        price: 505.00
+      }
+    ]
   },
   getters: {
   },

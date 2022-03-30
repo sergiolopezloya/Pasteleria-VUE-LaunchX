@@ -4,7 +4,7 @@
             <div class="uk-child-width-1-5@m uk-child-width-1-2\@s uk-flex uk-flex-middle" uk-grid>
                 <div>
                     <a href="/">
-                        <img src="img/logo.png" />
+                        <img src="/img/logo.png" />
                     </a>
                 </div>
                 <div class="uk-width-4-5@m uk-width-1-2@s">
